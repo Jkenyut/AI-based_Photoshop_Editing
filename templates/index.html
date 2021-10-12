@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI | MyPhotoshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/slick.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/templatemo-style.css')}}">
+
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="{{ url_for('static',filename='video/gfp-astro-timelapse.mp4')}}" type="video/mp4">
+    </video>
+    <div class="page-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <nav class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="/">Artificial Intelligence</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-supported-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item selected">
+                        <a class="nav-link" aria-current="page" href="#0" data-no="1">Home</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="2">Features</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="3">About</a>
+                        <div class="circle"></div>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
+            </div>
+          </div>          
+        </div>        
+      </div>      
+      <div class="container-fluid tm-content-container">
+        <ul class="cd-hero-slider mb-0 py-5">
+          <li class="px-3" data-page-no="1">
+            <div class="page-width-1 page-left">
+              <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+                <div class="intro-center">
+                  <h2 class="mb-4">Welcome to MyPhotoshop v1.1</h2>
+                  <p class="mb-4">
+                    This Web Application is made with opencv, html,mask-rcnn and flask. This is the first web app from JKenyut team. </p>
+                  <p class="mb-2">
+                    This application can beautify your photos, such as giving gray, negative, and pixelate effects. This application can also help you remove the background on your photos and can smoothen your face.</p>
+                    <p class="mb-0">Thank you, Regards JKenyut Team</p>
+                </div>
+                <div class="circle intro-circle-1"></div>
+                <div class="circle intro-circle-2"></div>
+                <div class="circle intro-circle-3"></div>
+                <div class="circle intro-circle-4"></div>
+              </div>
+
+              <!-- GALERI -->
+              <div class="text-center">
+                <a href="#0" data-page-no="2" class="btn btn-primary tm-intro-btn tm-page-link">
+                  Go to Features
+                </a>
+              </div>            
+            </div>            
+          </li>
+          <li data-page-no="2">
+            <!-- Image Carousel -->
+            <div class="mx-auto position-relative gallery-container">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="mx-auto tm-border-top gallery-slider">
+                <figure class="effect-julia item">
+                    <img src="{{ url_for('static',filename='img/Gray.jpg')}}" class="rounded" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Add Filter to Your Photo</p>
+                        </div>
+                        <a href="filter.html">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="{{ url_for('static',filename='img/Remove2.jpg')}}" class="rounded" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Remove Background</p>
+                        </div>
+                        <a href="remove.html">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="{{ url_for('static',filename='img/Smoothing2.jpg')}}" class="rounded" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Smoothing Face</p>
+                        </div>
+                        <a href="smoothing.html">View more</a>
+                    </figcaption>
+                </figure>
+              </div>
+            </div>
+          </li>
+          <li data-page-no="3" class="px-3">
+            <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+              <div class="tm-bg-dark content-pad">
+                <h2 class="mb-4">About Us</h2>
+                <hr>
+                <p class="mb-4">
+                  The JKenyut team consists of 3 students :
+                </p>
+                <p class="mb-1"></p>
+                  <p>1. Satria Nur Saputro | 19102296</p> 
+                  <p>2. Andika Dwi Santoso | 19102180</p>
+                  <p>3. Nafi Ilham Hamami | 19102116</p>
+                <p>
+                  This website was created to fulfill assignments in an Artificial Intelligence course. 
+                  <p>Supervisor, Mr. Agi Prasetiadi, S.T., M. Eng.</p>
+                </p>
+              </div>              
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+      <footer class="row mx-auto tm-footer">
+        <div class="col-md-6 px-0">
+          Copyright 2021 JKenyut Team. All rights reserved.
+        </div>
+        <div class="col-md-6 px-0 tm-footer-right">
+          TEKNIK INFORMATIKA
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+  <div id="loader-wrapper">            
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>  
+
+  <script src="{{ url_for('static',filename='js/jquery-3.5.1.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/slick.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/templatemo-script.js')}}"></script>
+
+</body>
+</html>
