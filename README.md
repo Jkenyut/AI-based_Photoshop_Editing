@@ -1,5 +1,5 @@
-Anda harus mendownload file mask-rcnn h5 di github https://github.com/matterport/Mask_RCNN dan menginstall library pastikan tensorflow versi 1 dan keras > 2.0.6
+# AI-Photoshop Simple
 
-Program sederhana Edit Photoshop berbasis web.
-Menggunakan mask rcnn , open-cv , flask ,dan cv2
-Fungsi utama smoothing gambar, filter gambar, dan remove background otomatis.
+You should download the mask-can h5 file on GitHub https://github.com/matterport/Mask_RCNN and install the library to make sure tensorflow version 1 and Keras > 2.0.6
+
+A simple web-based Photoshop editing program. Using mask RCNN, open-cv, flask, and cv2, the main functions are image smoothing, image filtering, and automatic background removal.
